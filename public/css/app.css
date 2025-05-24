@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.success {
+    color: green;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    background-color: #e6ffe6;
+    border: 1px solid #b3ffb3;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    color: #721c24;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.filter select {
+    padding: 8px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.navigation a {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #0056b3;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    width: 30%;
+    text-align: center;
+}
+
+.day h3 {
+    margin-bottom: 10px;
+}
+
+.slots {
+    list-style: none;
+    padding: 0;
+}
+
+.slot {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.category-1 { 
+    background-color: #e6f3ff;
+}
+
+.category-2 {
+    background-color: #ffe6e6;
+}
+
+.category-3 {
+    background-color: #b8d9b8;
+}
+
+.action-btn {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background-color: #28a745;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
