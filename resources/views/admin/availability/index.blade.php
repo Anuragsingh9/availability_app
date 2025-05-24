@@ -57,7 +57,9 @@
             @endforeach
         </tbody>
     </table>
-
+    <div class="pagination">
+        {{ $availabilities->appends(request()->query())->links() }}
+    </div>
     @if(session('success'))
         <script>
             setTimeout(function() {

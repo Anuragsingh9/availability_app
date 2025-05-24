@@ -45,7 +45,7 @@ class AvailabilityController extends Controller
 
         $availabilities = Availability::when($categoryId, function ($query, $categoryId) {
             return $query->where('category_id', $categoryId);
-        })->get();
+        })->paginate(5);
 
         return view('admin.availability.index', compact('availabilities', 'categories', 'categoryId'));
     }
