@@ -5,7 +5,7 @@
 @section('content')
     <h1>Availability</h1>
 
-    <div class="filter">
+    <div class="filter navigation">
         <form method="GET" action="{{ route('availability.index') }}">
             <label for="category_id">Select Category</label>
             <select name="category_id" id="category_id" onchange="this.form.submit()">
@@ -18,8 +18,10 @@
             </select>
             <input type="hidden" name="start_date" value="{{ $startDate }}">
         </form>
+        <div class="navigation">
+            <a href="{{ route('admin.availabilities.create') }}" class="btn btn-primary">Add Availability</a>
+        </div>   
     </div>
-
     <div class="navigation">
         <a href="{{ route('availability.index', ['start_date' => $previousStart, 'category_id' => $categoryId]) }}">← Previous</a>
         <a href="{{ route('availability.index', ['start_date' => $nextStart, 'category_id' => $categoryId]) }}">Next →</a>
